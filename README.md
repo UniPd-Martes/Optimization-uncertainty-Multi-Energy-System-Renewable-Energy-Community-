@@ -36,7 +36,7 @@
 ## Instructions to use the software
 
 ### The software includes:
-  - the script "Model_ML2" developed in Python, containing the optimization models with and without uncertainty, which are solved by the Gurobi optimizer
+  - the script "Model_ML2.py" developed in Python, containing the optimization models with and without uncertainty, which are solved by the Gurobi optimizer
   - input data in the "Input_data" folder
   - results in the "Results" folder
   - this README.md file
