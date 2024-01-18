@@ -47,15 +47,15 @@
     - "address" is the city chosen in the section "AVERAGE SEASONAL DAYS AND STOCHASTIC SCENARIOS" (see the sections afterwards)
   - line 1053: to save results in PATH = "C:/.../Results/"+address
   - line 1070: to export results without uncertainty to PATH_export_det = "C:/.../Results/"+address+"/Deterministic_solution_"+address+".xlsx"
-  - line 1105: to export results with uncertainty to PATH_export_sto = "C:/.../Results/"+address+"/Stochastic_solutions_"+address+".xlsx"
-  - line 1133: to save plots with uncertainty in PATH_plots_sto = "C:/.../Results/"+address+"/Plots/Stochastic_scenarios"
-  - line 1259: to save plots without uncertainty in PATH_plots_det = "C:/.../Results/"+address+"/Plots/Average_seasonal_days"
+  - line 1107: to export results with uncertainty to PATH_export_sto = "C:/.../Results/"+address+"/Stochastic_solutions_"+address+".xlsx"
+  - line 1138: to save plots with uncertainty in PATH_plots_sto = "C:/.../Results/"+address+"/Plots/Stochastic_scenarios"
+  - line 1264: to save plots without uncertainty in PATH_plots_det = "C:/.../Results/"+address+"/Plots/Average_seasonal_days"
 
 ### In running the script "Model_ML2", the user can choose:
   - a city (Belluno, Padova, Palermo) as location for the weather parameters (solar irradiance and ambient temperature)
   - a year (from 2005 to 2014) and a number of typical days (from 2 to 7) for each season to obtain plots 
 
-### The script "Model_ML2" is divided in sections that can be run independently
+### The script "Model_ML2" is divided into sections that can be run independently
   - "MODEL": general comments on the models
   - "PYTHON PACKAGES": import Python packages
   - "TECHNO-ECONOMIC PARAMETERS": import techno-economic parameters of the conversion and storage units, price of natural gas and financial parameters
@@ -70,6 +70,7 @@
   - "SOLVING THE MODEL WITH UNCERTAINTY": solve the model with uncertainty based on the same number of typical days for each season (2,3,4,5,6,7), resulting in different stochastic scenarios for each year of the training dataset (K=8,12,16,20,24,28)
   - "SAVE AND EXPORT RESULTS": 
     - save the main results with and without uncertainty in the npz files "Stochastic_solutions_+address.npz" and "Deterministic_solution_+address.npz", respectively
-    - export the optimal total costs, investment costs and operational costs with and without uncertainty to the excel files "Stochastic_solutions_+address.xlsx" and "Deterministic_solution_+address.xlsx", respectively
+    - export the optimal total costs, investment costs and operational costs, and some capacities with and without uncertainty to the excel files "Stochastic_solutions_+address.xlsx" and "Deterministic_solution_+address.xlsx", respectively
+    - lines 1078,1083,1090,1116,1121,1128: you can add new lines to export more optimal capacities
   - "PLOTS": obtain the plots of solar irradiance, ambient temperature, electricity and heating demands, and grid sale price with and without uncertainty
     - choose a year (variable "Y") by writing a value in the range 2005-2014 and a number of typical days for each season (variable "C") by writing a value in the range 2-7 in the console
